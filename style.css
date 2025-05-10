@@ -1,0 +1,428 @@
+/* Root Color Variables */
+:root {
+    --rolex-green: #003e2f;
+    --rolex-gold: #d4af37;
+    --dark-text: #1a1a1a;
+    --light-text: #f5f5f5;
+    --background-light: #f9f9f9;
+    --button-hover: #b9972e;
+    --card-bg: #ffffff;
+    --border-color: #e0e0e0;
+    --font-serif: 'EB Garamond', 'Garamond', serif;
+  }
+  
+  /* Reset and Base */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: var(--font-serif);
+    background-color: var(--background-light);
+    color: var(--dark-text);
+    line-height: 1.6;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--rolex-green);
+    padding: 1rem 2rem;
+    color: var(--light-text);
+  }
+  
+  .navbar .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--rolex-gold);
+    font-family: var(--font-serif);
+  }
+  
+  .navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .navbar .nav-links a {
+    text-decoration: none;
+    color: var(--light-text);
+    font-weight: 600;
+    transition: color 0.3s;
+  }
+  
+  .navbar .nav-links a:hover {
+    color: var(--rolex-gold);
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: linear-gradient(135deg, #00291f, #003e2f);
+    color: var(--light-text);
+    text-align: center;
+    padding: 5rem 2rem;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .cta-button {
+    background-color: var(--rolex-gold);
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .cta-button:hover {
+    background-color: var(--button-hover);
+  }
+  
+  /* Features Section */
+  .features {
+    padding: 4rem 2rem;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .features h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: var(--rolex-green);
+  }
+  
+  .feature-grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .feature-item {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+    transition: transform 0.3s ease;
+  }
+  
+  .feature-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .feature-item img {
+    width: 60px;
+    margin-bottom: 1rem;
+  }
+  
+  .feature-item h3 {
+    color: var(--rolex-green);
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+  }
+  
+  /* Shop Page */
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 3rem 1rem;
+  }
+  
+  .product {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    margin: 1rem;
+    padding: 1rem;
+    width: 240px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+  
+  .product:hover {
+    transform: translateY(-5px);
+  }
+  
+  .product img {
+    width: 100%;
+    border-radius: 6px;
+  }
+  
+  .product h3 {
+    color: var(--rolex-green);
+    margin: 0.75rem 0 0.5rem;
+  }
+  
+  .product p {
+    color: #666;
+    margin-bottom: 0.75rem;
+  }
+  
+  .btn {
+    background-color: var(--rolex-gold);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: var(--button-hover);
+  }
+  
+  /* Contact Section */
+  .contact-section {
+    padding: 4rem 2rem;
+    background-color: #f4f4f4;
+    text-align: center;
+  }
+  
+  .contact-section h2 {
+    font-size: 2rem;
+    color: var(--rolex-green);
+    margin-bottom: 1rem;
+  }
+  
+  .contact-section p {
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    color: #555;
+  }
+  
+  .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+  }
+  
+  .contact-form button {
+    background-color: var(--rolex-gold);
+    color: white;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .contact-form button:hover {
+    background-color: var(--button-hover);
+  }
+  
+  /* About Section */
+  .about-section {
+    padding: 4rem 2rem;
+    background-color: #f0f0f0;
+    color: var(--dark-text);
+    text-align: center;
+  }
+  
+  .about-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--rolex-green);
+  }
+  
+  .about-section p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+  }
+  
+  .about-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .about-card {
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    padding: 1.5rem;
+    width: 260px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+  }
+  
+  .about-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .about-card h3 {
+    color: var(--rolex-gold);
+    margin-bottom: 0.5rem;
+  }
+  
+  .about-card p {
+    color: #444;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: var(--rolex-green);
+    color: var(--light-text);
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+  /* Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #f5f5f5;
+    color: #222;
+    line-height: 1.6;
+    font-size: 16px;
+  }
+  
+  /* Header */
+  header {
+    background-color: #0a0a0a;
+    color: #e0dcdc;
+    text-align: center;
+    padding: 2rem 1rem;
+    border-bottom: 4px solid #c0aa70;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+  }
+  
+  header p {
+    font-style: italic;
+    color: #ccc;
+  }
+  
+  /* Navigation */
+  nav {
+    display: flex;
+    justify-content: center;
+    background-color: #1a1a1a;
+    padding: 1rem;
+    border-bottom: 2px solid #c0aa70;
+  }
+  
+  nav a {
+    color: #e6e6e6;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #c0aa70;
+  }
+  
+  /* Container & Product Grid */
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
+    gap: 2rem;
+  }
+  
+  /* Product Card */
+  .product {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    width: 280px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .product:hover {
+    transform: translateY(-8px);
+  }
+  
+  .product img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .product h3 {
+    color: #333;
+    padding: 1rem 1rem 0.5rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+  }
+  
+  .product p {
+    padding: 0 1rem;
+    color: #666;
+    font-size: 1rem;
+  }
+  
+  /* Button Styling */
+  .btn {
+    display: block;
+    width: 80%;
+    margin: 1rem auto;
+    padding: 0.75rem;
+    background-color: #c0aa70;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #a68e57;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
