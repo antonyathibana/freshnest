@@ -26,38 +26,33 @@
   }
   
   /* Navbar */
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--rolex-green);
-    padding: 1rem 2rem;
-    color: var(--light-text);
+  :root {
+    --rolex-green: #006747;
+    --rolex-gold: #d4af37;
+    --light-text: #ffffff;
+    --font-serif: 'Georgia', serif;
   }
   
-  .navbar .logo {
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: var(--rolex-gold);
+  .navbar {
     font-family: var(--font-serif);
   }
   
-  .navbar .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 1.5rem;
+  .navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--rolex-gold);
   }
   
-  .navbar .nav-links a {
-    text-decoration: none;
+  .navbar-nav .nav-link {
     color: var(--light-text);
     font-weight: 600;
     transition: color 0.3s;
   }
   
-  .navbar .nav-links a:hover {
+  .navbar-nav .nav-link:hover {
     color: var(--rolex-gold);
   }
+  
   
   /* Hero Section */
   .hero {
